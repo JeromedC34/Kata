@@ -5,7 +5,11 @@ package com.jerome.kata;
  */
 
 public class StringCalculator {
-    int Add(String numbers) {
-        return 0;
+    int Add(String string) {
+        if (string.equals("")) {
+            return 0;
+        } else {
+            return Integer.valueOf(string);
+        }
     }
 }

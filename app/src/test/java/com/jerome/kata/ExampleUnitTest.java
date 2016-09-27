@@ -18,4 +18,10 @@ public class ExampleUnitTest {
         StringCalculator myStringCalculator = new StringCalculator();
         assertEquals(test_result, myStringCalculator.Add(""));
     }
+    @Test
+    public void stringCalculatorAddShouldReturnValueOfSingleNumberStringInput() throws Exception {
+        int test_result = 1;
+        StringCalculator myStringCalculator = new StringCalculator();
+        assertEquals(test_result, myStringCalculator.Add("1"));
+    }
 }
