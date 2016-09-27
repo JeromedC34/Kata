@@ -24,4 +24,10 @@ public class ExampleUnitTest {
         StringCalculator myStringCalculator = new StringCalculator();
         assertEquals(test_result, myStringCalculator.Add("1"));
     }
+    @Test
+    public void stringCalculatorAddShouldReturnValueOfSeveralNumbersSeparatedByCommaStringInput() throws Exception {
+        int test_result = 3;
+        StringCalculator myStringCalculator = new StringCalculator();
+        assertEquals(test_result, myStringCalculator.Add("1,2"));
+    }
 }
