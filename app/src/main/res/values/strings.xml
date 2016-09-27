@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Kata</string>
+    <string name="calc_input">Tapez ici votre calcul</string>
+    <string name="calc_action">Calculer</string>
+    <string name="calc_result">Résultat</string>
 </resources>

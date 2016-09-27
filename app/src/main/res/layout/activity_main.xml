@@ -9,42 +9,42 @@
     android:paddingTop="96dp"
     android:orientation="vertical"
     android:background="@drawable/my_layout"
-    tools:context="com.hbdriod.kata.MainActivity">
+    tools:context="com.jerome.kata.MainActivity">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/my_input_text"
-        android:paddingBottom="5dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:paddingTop="5dp"
+        android:paddingBottom="@dimen/my_default_padding"
+        android:paddingLeft="@dimen/my_default_padding"
+        android:paddingRight="@dimen/my_default_padding"
+        android:paddingTop="@dimen/my_default_padding"
         android:layout_marginBottom="20dp"
         android:textSize="18sp"
-        android:hint="Tapez ici votre calcul" />
+        android:hint="@string/calc_input" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
+        android:paddingBottom="@dimen/my_default_padding"
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
-        android:paddingTop="5dp"
-        android:layout_gravity="right"
+        android:paddingTop="@dimen/my_default_padding"
+        android:layout_gravity="end"
         android:layout_marginBottom="20dp"
         android:textAllCaps="false"
         android:background="@drawable/my_button"
-        android:textSize="18dp"
-        android:text="Calculer" />
+        android:textSize="18sp"
+        android:text="@string/calc_action" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/my_input_text"
-        android:paddingBottom="5dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:paddingTop="5dp"
+        android:paddingBottom="@dimen/my_default_padding"
+        android:paddingLeft="@dimen/my_default_padding"
+        android:paddingRight="@dimen/my_default_padding"
+        android:paddingTop="@dimen/my_default_padding"
         android:textSize="18sp"
-        android:text="Résultat" />
+        android:text="@string/calc_result" />
 </LinearLayout>

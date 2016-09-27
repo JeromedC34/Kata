@@ -1,4 +1,4 @@
-package com.hbdriod.kata;
+package com.jerome.kata;
 
 import org.junit.Test;
 
