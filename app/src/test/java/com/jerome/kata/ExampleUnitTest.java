@@ -36,4 +36,10 @@ public class ExampleUnitTest {
         StringCalculator myStringCalculator = new StringCalculator();
         assertEquals(test_result, myStringCalculator.add("1\n2,3"));
     }
+    @Test
+    public void stringCalculatorAddShouldReturnValueOfSeveralNumbersSeparatedBySpecifiedDelimiterStringInput() throws Exception {
+        int test_result = 3;
+        StringCalculator myStringCalculator = new StringCalculator();
+        assertEquals(test_result, myStringCalculator.add("//;\n1;2"));
+    }
 }
