@@ -16,18 +16,24 @@ public class ExampleUnitTest {
     public void stringCalculatorAddShouldReturnZeroWhenEmptyStringInput() throws Exception {
         int test_result = 0;
         StringCalculator myStringCalculator = new StringCalculator();
-        assertEquals(test_result, myStringCalculator.Add(""));
+        assertEquals(test_result, myStringCalculator.add(""));
     }
     @Test
     public void stringCalculatorAddShouldReturnValueOfSingleNumberStringInput() throws Exception {
         int test_result = 1;
         StringCalculator myStringCalculator = new StringCalculator();
-        assertEquals(test_result, myStringCalculator.Add("1"));
+        assertEquals(test_result, myStringCalculator.add("1"));
     }
     @Test
     public void stringCalculatorAddShouldReturnValueOfSeveralNumbersSeparatedByCommaStringInput() throws Exception {
         int test_result = 3;
         StringCalculator myStringCalculator = new StringCalculator();
-        assertEquals(test_result, myStringCalculator.Add("1,2"));
+        assertEquals(test_result, myStringCalculator.add("1,2"));
+    }
+    @Test
+    public void stringCalculatorAddShouldReturnValueOfSeveralNumbersSeparatedByCommaOrNewLineStringInput() throws Exception {
+        int test_result = 6;
+        StringCalculator myStringCalculator = new StringCalculator();
+        assertEquals(test_result, myStringCalculator.add("1\n2,3"));
     }
 }

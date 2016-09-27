@@ -7,8 +7,8 @@ import java.util.StringTokenizer;
  */
 
 public class StringCalculator {
-    int Add(String string) {
-        StringTokenizer myStringTokenizer = new StringTokenizer(string, ",");
+    int add(String string) {
+        StringTokenizer myStringTokenizer = new StringTokenizer(string, ",\n");
         int result = 0;
         while (myStringTokenizer.hasMoreElements()) {
             result += Integer.valueOf(myStringTokenizer.nextElement().toString());
